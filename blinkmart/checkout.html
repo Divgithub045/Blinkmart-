@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Placed Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #FFB74D;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #FF9800;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .container .icon {
+            font-size: 60px;
+            color: #FFF3E0;
+            animation: bounce 1.2s infinite;
+        }
+
+        .container h1 {
+            margin: 20px 0 10px;
+            font-size: 28px;
+            color: #FFF3E0;
+            animation: textPop 1s ease-out forwards;
+        }
+
+        .container p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes textPop {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🍔</div>
+        <h1>Order Placed</h1>
+        <p>Thank you for your order!</p>
+    </div>
+</body>
+</html>
