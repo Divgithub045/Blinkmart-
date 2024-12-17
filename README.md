@@ -90,9 +90,9 @@ BlinkMart is an e-commerce web application designed to deliver a seamless shoppi
    ```
 2. **Setup XAMPP:**
    - Start Apache and MySQL services.
-   - Import the `blinkmart.sql` file into your MySQL database.
+   - Import the `blinkmart.sql`  file in database folder into your MySQL database.
 3. **Configure Database:**
-   - Update database credentials in `config.php`.
+   - Update database credentials or rename your database to blinkmart
 4. **Launch Application:**
    - Open the application in your browser (e.g., [http://localhost/blinkmart](http://localhost/blinkmart)).
    - start the project with localhost/blinkmart/login.php
